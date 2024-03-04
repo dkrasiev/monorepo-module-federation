@@ -4,7 +4,15 @@
     "outDir": "./dist/",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ],
+      "shop": [
+        "../shop/src/routes"
+      ],
+      "admin": [
+        "../admin/src/routes"
+      ]
     }
   }
 }

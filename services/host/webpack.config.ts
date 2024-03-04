@@ -1,6 +1,6 @@
 import path from 'path';
 import webpack from 'webpack';
-import {BuildMode, BuildPaths, BuildPlatform, buildWebpack, BuildOptions} from '@packages/build-config'
+import { BuildMode, BuildPaths, BuildPlatform, buildWebpack, BuildOptions } from '@packages/build-config'
 import packageJson from './package.json'
 
 interface EnvVariables {
@@ -39,6 +39,7 @@ export default (env: EnvVariables) => {
             shop: `shop@${SHOP_REMOTE_URL}/remoteEntry.js`,
             admin: `admin@${ADMIN_REMOTE_URL}/remoteEntry.js`,
         },
+
         shared: {
             ...packageJson.dependencies,
             react: {
