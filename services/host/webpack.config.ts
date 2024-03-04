@@ -35,6 +35,7 @@ export default (env: EnvVariables) => {
     paths,
     analyzer: env.analyzer,
     platform: env.platform ?? 'desktop',
+    startBrowser: true,
   })
 
   config.plugins.push(

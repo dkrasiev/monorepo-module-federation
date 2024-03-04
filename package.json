@@ -2,13 +2,15 @@
   "name": "monorepo-module-federation",
   "version": "1.0.0",
   "scripts": {
-    "format": "prettier --write ./packages/**/* ./services/**/*"
+    "start": "node ./start-dev-server.js",
+    "format": "prettier --write ./packages/**/* ./services/**/* ./start-dev-server.js"
   },
   "workspaces": [
     "packages/*",
     "services/*"
   ],
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "prettier": "^3.2.5"
   }
 }
