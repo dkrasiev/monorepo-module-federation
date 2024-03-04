@@ -1,4 +1,4 @@
 export const shopRoutes = {
-    main: '/shop/main',
-    second: '/shop/second',
+  main: '/shop/main',
+  second: '/shop/second',
 }
